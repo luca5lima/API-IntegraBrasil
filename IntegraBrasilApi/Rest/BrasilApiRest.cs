@@ -8,7 +8,6 @@ namespace IntegraBrasilApi.Rest
 {
     public class BrasilApiRest : IBrasilApi
     {
-        public object JsonSerializar { get; private set; }
 
         public async Task<ResponseGenerico<EnderecoModel>> BuscarEnderecoPorCep(string cep)
         {
@@ -43,7 +42,7 @@ namespace IntegraBrasilApi.Rest
 
         public Task<ResponseGenerico<EnderecoModel>> BuscarBanco(string codigoBanco)
         {
-            
+            throw new NotImplementedException();
         }
     }
 }
